@@ -1,19 +1,8 @@
 <section>
   <h1>Music Database</h1>
   <h2>Add a Song</h2>
+  <p class="status"></p>
   <%= form_for(@music) do |f| %>
-    <% if @music.errors.any? %>
-      <div id="error_explanation">
-        <h2><%= pluralize(@music.errors.count, "error") %> prohibited this music from being saved:</h2>
-  
-        <ul>
-        <% @music.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-        </ul>
-      </div>
-    <% end %>
-  
     <div class="field">
       <%= f.label :title %><br>
       <%= f.text_field :title %>
@@ -54,7 +43,7 @@
           <td><%= music.artist %></td>
           <td><%= music.year %></td>
           <td><%= music.genre %></td>
-          <td><%= link_to 'Destroy', music, method: :delete, class: 'music_delete' %></td>
+          <td><%= link_to 'x', music, method: :delete, class: 'music_delete' %></td>
         </tr>
       <% end %>
     </tbody>

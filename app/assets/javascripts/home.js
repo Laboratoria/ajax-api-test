@@ -3,6 +3,7 @@ $(function() {
     var $addMusic = $("#new_music"),
         $musicList = $("#music_list"),
         $deleteMusic = $(".music_delete"),
+        $status = $(".status"),
         addAPIPath = $addMusic.attr("action");
         
     var template = "<tr>";
@@ -10,8 +11,13 @@ $(function() {
         template += "<td>{{artist}}</td>";
         template += "<td>{{year}}</td>";
         template += "<td>{{genre}}</td>";
-        template += "<td><a class='music_delete' data-method='delete' href='/musics/{{id}}'>Destroy</a></td>";
+        template += "<td><a class='music_delete' data-method='delete' href='/musics/{{id}}'>x</a></td>";
         template += "</tr>"
+    
+    var  manageStatus = function (message, doShow) {
+        $status.text(message);
+        doShow ? $status.fadeIn(10, "linear") : $status.fadeOut(4000, "linear");
+    };
     
     var addSong = function (event) {
         event.preventDefault();
@@ -24,7 +30,7 @@ $(function() {
             genre: $("#music_genre").val()
         };
         
-        console.log(song);
+        manageStatus("Status: Sending request...", true);
         
         $.ajax({
             url: addAPIPath,
@@ -37,9 +43,12 @@ $(function() {
                                           .replace("{{year}}", response.year)
                                           .replace("{{genre}}", response.genre)
                                           .replace("{{id}}", response.id));
+                                          
+                                          
+                manageStatus("Status: OK", false);
             },
             error: function (error) {
-                console.log(error);
+                manageStatus("Status: Request Failed", false);
             }
         });
         
