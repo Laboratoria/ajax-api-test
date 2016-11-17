@@ -18,12 +18,21 @@ Finally, you should run ```rails server``` or ```rails s``` command.
 
 ## The Task
 
-Currently, there is no data validation when a movie is added through the website. Your task is to add basic JavaScript-based validation for the song title, artist, year, and genre inputs. Submitted values must meet the following criteria:
+Currently, there is no data validation when a movie is added through the website. The data is managed asynchronously through the use of a JSON-based REST API. Bootstrap is used as a UI framework.
 
-- All validation must be done with JavaScript/jQuery.
-- None of the fields may be blank.
-- Leading and trailing whitespace must be removed from the input.
-- The song title must have a maximum of 40 characters.
-- The song artist must have a maximum of 60 characters.
-- The year should be a positive whole integer, and must be between 1900 and *current year*, inclusive. 
-- The genre must have a maximum length of 30 characters.
+You have 3 tasks to complete:
+
+- Fist, you should change the UI using Bootstrap as much as you can in orter to look like this:
+
+- Then, the task is to add basic JavaScript-based validation for the song title, artist, year, and genre inputs. Submitted values must meet the following criteria:
+
+  - All validation must be done with JavaScript/jQuery.
+  - None of the fields may be blank.
+  - Leading and trailing whitespace must be removed from the input.
+  - The song title must have a maximum of 40 characters.
+  - The song artist must have a maximum of 60 characters.
+  - The year should be a positive whole integer, and must be between 1900 and *current year*, inclusive. 
+  - The genre must have a maximum length of 30 characters.
+  - Invalid data must not be submitted, meaning that it cannot make it through into the database or be displayed in the list of movies on the website.
+
+- Finally, you should implement the DELETE method using the API provided through an asynchronous request (AJAX) when clicking on each remove button of every song.
