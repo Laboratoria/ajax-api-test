@@ -1,9 +1,10 @@
 $(function() {
     
     var $addMusic = $("#new_music"),
-        $musicList = $("#music_list"),
+        $musicList = $("#music_list").find("tbody"),
         $deleteMusic = $(".music_delete"),
         $status = $(".status"),
+        $noMusic = $(".no_music")
         addAPIPath = $addMusic.attr("action");
         
     var template = "<tr>";

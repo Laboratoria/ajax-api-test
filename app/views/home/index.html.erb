@@ -2,6 +2,7 @@
   <h1>Music Database</h1>
   <h2>Add a Song</h2>
   <p class="status"></p>
+  <div class="errors"></div>
   <%= form_for(@music) do |f| %>
     <div class="field">
       <%= f.label :title %><br>
@@ -25,7 +26,7 @@
   <% end %>
   
   <h2>List of Songs</h2>
-  <table>
+  <table id="music_list">
     <thead>
       <tr>
         <th>Title</th>
@@ -36,7 +37,7 @@
       </tr>
     </thead>
   
-    <tbody id="music_list">
+    <tbody>
       <% @musics.each do |music| %>
         <tr>
           <td><%= music.title %></td>
@@ -48,4 +49,5 @@
       <% end %>
     </tbody>
   </table>
+  <p class="no_music">No music yet... please, add some!</p>
 </section>
