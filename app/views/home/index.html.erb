@@ -1,0 +1,62 @@
+<section>
+  <h1>Music Database</h1>
+  <h2>Add a Song</h2>
+  <%= form_for(@music) do |f| %>
+    <% if @music.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@music.errors.count, "error") %> prohibited this music from being saved:</h2>
+  
+        <ul>
+        <% @music.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+  
+    <div class="field">
+      <%= f.label :title %><br>
+      <%= f.text_field :title %>
+    </div>
+    <div class="field">
+      <%= f.label :artist %><br>
+      <%= f.text_field :artist %>
+    </div>
+    <div class="field">
+      <%= f.label :year %><br>
+      <%= f.text_field :year %>
+    </div>
+    <div class="field">
+      <%= f.label :genre %><br>
+      <%= f.text_field :genre %>
+    </div>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+  <% end %>
+  
+  <h2>List of Songs</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Artist</th>
+        <th>Year</th>
+        <th>Genre</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+  
+    <tbody id="music_list">
+      <% @musics.each do |music| %>
+        <tr>
+          <td><%= music.title %></td>
+          <td><%= music.artist %></td>
+          <td><%= music.year %></td>
+          <td><%= music.genre %></td>
+          <td><%= link_to 'Destroy', music, method: :delete, class: 'music_delete' %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</section>
