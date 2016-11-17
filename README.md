@@ -36,5 +36,6 @@ You have 4 tasks to complete:
   - The year should be a positive whole integer, and must be between 1900 and *current year*, inclusive. 
   - The genre must have a maximum length of 30 characters.
   - Invalid data must not be submitted, meaning that it cannot make it through into the database or be displayed in the list of movies on the website.
+  - All errors must be shown inside of ```div.errors``` container, make sure you don't change class name. 
 
 - Finally, you should implement the DELETE method using the API provided through an asynchronous request (AJAX) when clicking on each remove button of every song.
