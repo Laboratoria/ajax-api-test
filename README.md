@@ -15,3 +15,15 @@ To install all dependencies this project uses, you should run ```bundle install`
 This project has a model to store music records. In order to start rails webserver without getting errors, you should run ```rake db:migrate``` command, this will create a SQLite database on your development environment.
 
 Finally, you should run ```rails server``` or ```rails s``` command.
+
+## The Task
+
+Currently, there is no data validation when a movie is added through the website. Your task is to add basic JavaScript-based validation for the song title, artist, year, and genre inputs. Submitted values must meet the following criteria:
+
+- All validation must be done with JavaScript/jQuery.
+- None of the fields may be blank.
+- Leading and trailing whitespace must be removed from the input.
+- The song title must have a maximum of 40 characters.
+- The song artist must have a maximum of 60 characters.
+- The year should be a positive whole integer, and must be between 1900 and *current year*, inclusive. 
+- The genre must have a maximum length of 30 characters.
