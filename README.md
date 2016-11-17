@@ -20,9 +20,11 @@ Finally, you should run ```rails server``` or ```rails s``` command.
 
 Currently, there is no data validation when a movie is added through the website. The data is managed asynchronously through the use of a JSON-based REST API. Bootstrap is used as a UI framework.
 
-You have 3 tasks to complete:
+You have 4 tasks to complete:
 
 - Fist, you should change the UI using Bootstrap as much as you can in orter to look like this:
+
+- You should check if there is no music records in database in order to show message appropriately (```p.no_music```). 
 
 - Then, the task is to add basic JavaScript-based validation for the song title, artist, year, and genre inputs. Submitted values must meet the following criteria:
 
