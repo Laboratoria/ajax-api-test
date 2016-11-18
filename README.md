@@ -24,6 +24,22 @@ You have 4 tasks to complete:
 
 - Fist, you should change the UI using Bootstrap as much as you can in orter to look like this:
 
+  - Add Form and no music records message.
+
+    ![Add Song Form](https://s21.postimg.org/elj90qko7/Screen_Shot_2016_11_17_at_5_56_23_PM.png)
+    
+  - Status bar.
+  
+    ![Status Bar](https://s11.postimg.org/5is8v2hnn/Screen_Shot_2016_11_17_at_6_04_07_PM.png)
+    
+  - Error messages.
+  
+    ![Error Message Container](https://s16.postimg.org/ga70vo4et/Screen_Shot_2016_11_17_at_6_07_01_PM.png)
+    
+  - Music records.
+  
+    ![Music Records](https://s21.postimg.org/7z4g0dfev/Screen_Shot_2016_11_17_at_6_15_30_PM.png)
+
 - You should check if there is no music records in database in order to show message appropriately (```p.no_music```). 
 
 - Then, the task is to add basic JavaScript-based validation for the song title, artist, year, and genre inputs. Submitted values must meet the following criteria:
