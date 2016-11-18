@@ -56,3 +56,8 @@ You have 4 tasks to complete:
     - Error's syntax should be: **Invalid [field]**.
 
 - Finally, you should implement the DELETE method using the API provided through an asynchronous request (AJAX) when clicking on each remove button of every song.
+
+## Time
+
+- Expected time: 1 hour.
+- Total time: 1 hour and 30 minutes.
