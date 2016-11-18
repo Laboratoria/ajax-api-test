@@ -61,3 +61,7 @@ You have 4 tasks to complete:
 
 - Expected time: 2 hours.
 - Total time: 3 hours.
+
+## Optional
+
+If you get the tasks on time, you can improve the UI as you would like in a new branch. This will be gladly received and checked to be counted as extra points. 
