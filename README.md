@@ -12,7 +12,7 @@ To run this project you must be sure you have [ruby](https://www.ruby-lang.org) 
 
 To install all dependencies this project uses, you should run ```bundle install``` command from your terminal on the root of your project.
 
-This project has a model to store music records. In order to start rails webserver without getting errors, you should run ```rake db:migrate``` command, this will create a SQLite database on your development environment.
+This project has a model (Music) to interact with the database and perform operations (such as create and delete songs) with the API. In order to start rails webserver without getting errors, you should run ```rake db:migrate``` command, this will create a SQLite database on your development environment.
 
 Finally, you should run ```rails server``` or ```rails s``` command.
 
@@ -22,7 +22,7 @@ Currently, there is no data validation when a movie is added through the website
 
 You have 4 tasks to complete:
 
-- Fist, you should change the UI using Bootstrap as much as you can in orter to look like this:
+- First, you should change the UI using Bootstrap as much as you can in orter to look like this:
 
   - Add Form and no music records message.
 
@@ -59,5 +59,5 @@ You have 4 tasks to complete:
 
 ## Time
 
-- Expected time: 1 hour.
-- Total time: 1 hour and 30 minutes.
+- Expected time: 2 hours.
+- Total time: 3 hours.
