@@ -51,7 +51,7 @@ You have 4 tasks to complete:
   - The song artist must have a maximum of 60 characters.
   - The year should be a positive whole integer, and must be between 1900 and *current year*, inclusive. 
   - The genre must have a maximum length of 30 characters.
-  - Invalid data must not be submitted, meaning that it cannot make it through into the database or be displayed in the list of movies on the website.
+  - Invalid data must not be submitted, meaning that it cannot make it through into the database or be displayed in the list of songs on the website.
   - All errors must be shown inside of ```div.errors``` container, make sure you don't change class name. 
     - Error's syntax should be: **Invalid [field]**.
 
